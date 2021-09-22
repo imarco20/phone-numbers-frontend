@@ -1,0 +1,28 @@
+<div class="selects-container">
+  <select [(ngModel)]="countryCode">
+    <option *ngFor="let country of countries" [value]="country.code">{{country.name}}</option>
+  </select>
+  <select [(ngModel)]="state">
+    <option [value]="'OK'">Valid</option>
+    <option [value]="'NOK'">Invalid</option>
+  </select>
+  <button (click)="onSubmit()">Filter</button>
+</div>
+<table>
+  <thead>
+  <tr>
+    <th>Country</th>
+    <th>State</th>
+    <th>Country Code</th>
+    <th>Phone Number</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let customer of customers">
+    <td>{{customer.country}}</td>
+    <td>{{customer.state}}</td>
+    <td>{{customer.countryCode}}</td>
+    <td>{{customer.phoneNumber}}</td>
+  </tr>
+  </tbody>
+</table>
