@@ -11,6 +11,9 @@ following [repository](https://github.com/imarco20/phone-numbers).
 
 ## How to run the application
 
+- The project is developed in Angular, so you should [install Angular](https://angular.io/guide/setup-local) on your
+  machine before proceeding.
+
 ### 1. Using Terminal:
 
 - Navigate to the directory of the application on your computer, and run the following command
